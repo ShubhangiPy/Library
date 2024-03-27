@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borrowed Books</title>
+</head>
+<body>
+    <h1>Borrowed Books</h1>
+    <ul>
+        {% for borrowed_book in borrowed_books %}
+        <li>Title: {{ borrowed_book.book.title }} - Return Date: {{ borrowed_book.return_date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
